@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
 <body>
-<div id="container">
+<div class="map">
+<div class="text">
   <h1> Utah Snow Analysis </h1>
   <h3> &nbsp;&nbsp; Layer Visibility:</h3>
     <form action="/action_page.php" method="get">
@@ -12,65 +13,7 @@
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <style>
-      .switch {
-        position: relative;
-        display: inline-block;
-        width: 53px;
-        height: 18px;
-      }
-
-      .switch input { 
-        opacity: 0;
-        width: 0;
-        height: 0;
-      }
-
-      .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        -webkit-transition: .4s;
-        transition: .4s;
-      }
-
-      .slider:before {
-        position: absolute;
-        content: "";
-        height: 18px;
-        width: 26px;
-        left: 0px;
-        bottom: 0px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-      }
-
-      input:checked + .slider {
-        background-color: #2196F3;
-      }
-
-      input:focus + .slider {
-        box-shadow: 0 0 1px #2196F3;
-      }
-
-      input:checked + .slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
-      }
-
-      /* Rounded sliders */
-      .slider.round {
-        border-radius: 34px;
-      }
-
-      .slider.round:before {
-        border-radius: 50%;
-      }
+      
       </style>
      </head>
 
@@ -114,24 +57,26 @@
     </div>
   
   <h3> &nbsp;&nbsp; Zoom To:</h3>
-    <form action="/action_page.php">
-      Latitude:<br>
+    <form>
+      &nbsp;&nbsp;Latitude:<br>
       <input type="text" name="Latitude" value="41.115791">
       <br>
-      Longitude:<br>
+      &nbsp;&nbsp;Longitude:<br>
       <input type="text" name="Longitude" value="-112.476830">
       <br><br>
-      Date: <br>
+      &nbsp;&nbsp;Date: <br>
       <input type="text" name="Date" value="mm/dd/yyyy">
       <br><br>
-      <input type="submit" value="Submit">
+      &nbsp;&nbsp;<input type="submit" value="Submit">
     </form>
-
-
-
-<!--Google Map Embed-->
- <div style="display: flex; justify-content: center;">
-  <div class="mapouter"><div class="gmap_canvas"><iframe width="1080" height="733" id="gmap_canvas" src="https://maps.google.com/maps?q=utah&t=k&z=7&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"  marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{text-align:right;height:733px;width:1080px;margin-top:-565px; margin-left:-260px}.gmap_canvas {overflow:hidden;background:none!important;height:733px;width:1080px;}</style></div>
-  </div>
-  
+</div>
+<iframe
+  width="600"
+  height="900"
+  frameborder="0"
+  scrolling="no"
+  marginheight="0"
+  marginwidth="0"
+  src="https://maps.google.com/maps?q=utah&t=k&z=7&ie=UTF8&iwloc=&output=embed"></iframe>
+</div>
 </body>
