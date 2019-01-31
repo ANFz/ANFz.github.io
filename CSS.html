@@ -6,74 +6,74 @@
 
 <body>
 	<div class="map">
-	<div class="text">
-	  <h1> Utah Snow Analysis </h1>
-	  <h3> &nbsp;&nbsp; Layer Visibility:</h3>
-		<form action="/action_page.php" method="get">
-		  <input type="checkbox" name="vehicle" value="Basemap" checked="checked"> Basemap<br>
-		  <input type="checkbox" name="vehicle" value="Streams" > Streams<br> <br>
-		  <input type="checkbox" name="vehicle" value="Watershed" > Watershed Boundaries<br>
-		</form>
-		<head>
-		  <meta name="viewport" content="width=device-width, initial-scale=1">
-		  <style>
+		<div class="text">
+		  <h1> Utah Snow Analysis </h1>
+		  <h3> &nbsp;&nbsp; Layer Visibility:</h3>
+			<form action="/action_page.php" method="get">
+			  <input type="checkbox" name="vehicle" value="Basemap" checked="checked"> Basemap<br>
+			  <input type="checkbox" name="vehicle" value="Streams" > Streams<br> <br>
+			  <input type="checkbox" name="vehicle" value="Watershed" > Watershed Boundaries<br>
+			</form>
+			<head>
+			  <meta name="viewport" content="width=device-width, initial-scale=1">
+			  <style>
+			  
+			  </style>
+			 </head>
+
+			<label class="switch">
+			  <input type="checkbox">
+			  <span class="slider round"></span>
+			</label>
+
+			<label class="switch">
+			  <input type="checkbox" checked>
+			  <span class="slider round"></span>
+			</label> 
 		  
-		  </style>
-		 </head>
+			<label class="switch">
+			  <input type="checkbox" checked>
+			  <span class="slider round"></span>
+			</label>
+		  
+			<br>
+			 <form action="/action_page.php" method="get">
+			   <input type="checkbox" name="vehicle" value="Watershed" > Snow Data<br>
+			 </form>
+			<label class="switch">
+			  <input type="checkbox">
+			  <span class="slider round"></span>
+			</label>
 
-		<label class="switch">
-		  <input type="checkbox">
-		  <span class="slider round"></span>
-		</label>
-
-		<label class="switch">
-		  <input type="checkbox" checked>
-		  <span class="slider round"></span>
-		</label> 
-	  
-		<label class="switch">
-		  <input type="checkbox" checked>
-		  <span class="slider round"></span>
-		</label>
-	  
-		<br>
-		 <form action="/action_page.php" method="get">
-		   <input type="checkbox" name="vehicle" value="Watershed" > Snow Data<br>
-		 </form>
-		<label class="switch">
-		  <input type="checkbox">
-		  <span class="slider round"></span>
-		</label>
-
-		<label class="switch">
-		  <input type="checkbox" checked>
-		  <span class="slider round"></span>
-		</label> 
-	  
-		<label class="switch">
-		  <input type="checkbox" checked>
-		  <span class="slider round"></span>
-		</label>
-	  
-		<div class="slidecontainer">
-		  <p>&nbsp;&nbsp;&nbsp;Transparency</p>
-		  &nbsp;&nbsp;&nbsp; <input type="range" min="1" max="100" value="50">
+			<label class="switch">
+			  <input type="checkbox" checked>
+			  <span class="slider round"></span>
+			</label> 
+		  
+			<label class="switch">
+			  <input type="checkbox" checked>
+			  <span class="slider round"></span>
+			</label>
+		  
+			<div class="slidecontainer">
+			  <p>&nbsp;&nbsp;&nbsp;Transparency</p>
+			  &nbsp;&nbsp;&nbsp; <input type="range" min="1" max="100" value="50">
+			</div>
+		  
+		  <h3> &nbsp;&nbsp; Zoom To:</h3>
+			<form>
+			  &nbsp;&nbsp;Latitude:<br>
+			  <input type="text" name="Latitude" value="41.115791">
+			  <br>
+			  &nbsp;&nbsp;Longitude:<br>
+			  <input type="text" name="Longitude" value="-112.476830">
+			  <br><br>
+			  &nbsp;&nbsp;Date: <br>
+			  <input type="text" name="Date" value="mm/dd/yyyy">
+			  <br><br>
+			  &nbsp;&nbsp;<input type="submit" value="Submit">
+			</form>
 		</div>
-	  
-	  <h3> &nbsp;&nbsp; Zoom To:</h3>
-		<form>
-		  &nbsp;&nbsp;Latitude:<br>
-		  <input type="text" name="Latitude" value="41.115791">
-		  <br>
-		  &nbsp;&nbsp;Longitude:<br>
-		  <input type="text" name="Longitude" value="-112.476830">
-		  <br><br>
-		  &nbsp;&nbsp;Date: <br>
-		  <input type="text" name="Date" value="mm/dd/yyyy">
-		  <br><br>
-		  &nbsp;&nbsp;<input type="submit" value="Submit">
-		</form>
-	</div>
 	<iframe
 	  width="600"
 	  height="900"
