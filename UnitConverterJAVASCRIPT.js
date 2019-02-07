@@ -1,4 +1,3 @@
-
 var inch_meter = 0.0254;
 var feet_meter = 0.3048;
 var yard_meter = 0.9144;
@@ -27,7 +26,6 @@ function unitchange(){
     } else {
       f1 = kilometer_meter;
     }
-  //document.getElementById("fromunit").innerHTML = str1 + f1;
   
   var u2 = document.getElementById("unit2");
   var str2 = u2.options[u2.selectedIndex].value;
@@ -44,7 +42,6 @@ function unitchange(){
     } else {
       f2 = kilometer_meter;
     }
-//document.getElementById("tounit").innerHTML = str2 + f2;
 }
 
 //Value Conversion Function
@@ -53,4 +50,67 @@ function convertvalue(v) {
   v = v * f1 / f2;
   var vf = v.toFixed(6)
   document.getElementById("output").innerHTML= vf;
+  v = document.getElementById("input").value;
+  if (v == "forbidden"){
+  document.getElementById("output").innerHTML= 666;
+  {
+  var q = document.getElementById("input").value;
+  if (q == "forbidden"){
+    var blinks = document.getElementsByTagName('input');
+    var visibility = 'hidden';
+    window.setInterval(function() {
+      for (var i = blinks.length - 1; i >= 0; i--) {
+        blinks[i].style.visibility = visibility;
+      }
+      visibility = (visibility === 'visible') ? 'hidden' : 'visible';
+    }, 250);
+    document.getElementById("input").value = "YOU FOOL!";
+  }
+}
+  }
+  
+}
+
+//Random Comment Generator
+function rando(){
+  var r = Math.floor(Math.random() * 10);
+  if (r == 0){
+      r = "What a great conversion!";
+    } else if (r == 1){
+      r = "Imagine if these were alerts";
+    } else if (r == 2){
+      r = "CRITICAL CONVERSION!";
+    } else if (r == 3){
+      r = "Yep, that's a conversion alright";
+    } else if (r == 4){
+      r = "Dr. Ames is a cool dude!";
+    } else if (r == 5){
+      r = "I looked up some funny quotes but they were all dumb";
+    } else if (r == 6){
+      r = "That'll do converter, that'll do";
+    } else if (r == 7){
+      r = "Don't type in forbidden";
+    } else if (r == 8){
+      r = "I'm running out of ideas";
+    } else{
+      r = "Your conversions fuel me";
+    }
+
+      
+  document.getElementById("comment").innerHTML= r;
+}
+
+function forbidden(){
+  var q = document.getElementById("input").value;
+  if (q == "forbidden"){
+    var blinks = document.getElementsByTagName('input');
+    var visibility = 'hidden';
+    window.setInterval(function() {
+      for (var i = blinks.length - 1; i >= 0; i--) {
+        blinks[i].style.visibility = visibility;
+      }
+      visibility = (visibility === 'visible') ? 'hidden' : 'visible';
+    }, 250);
+    document.getElementById("input").value = "YOU FOOL!";
+  }
 }
