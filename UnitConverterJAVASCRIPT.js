@@ -91,7 +91,7 @@ function rando(){
     } else if (r == 7){
       r = "Don't type in forbidden";
     } else if (r == 8){
-      r = "I'm running out of ideas";
+      r = "I would much rather be in this picture right now";
     } else{
       r = "Your conversions fuel me";
     }
