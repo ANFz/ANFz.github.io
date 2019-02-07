@@ -15,4 +15,15 @@ body{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
+	background-size: contain;
+	background-color: black;
+}
+
+div{
+  margin: auto;
+  width: 30%;
+  border: 3px solid purple;
+  background-color: grey;
+  text-align:center;
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/04/00/79/3657feff1651e66.jpg")
 }
