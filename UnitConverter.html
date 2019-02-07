@@ -1,0 +1,40 @@
+<html>
+<body>
+	<script type"text/javascript" src="UnitConverterJAVASCRIPT.js"></script>
+	<link rel="stylesheet" type="text/css" href="./UnitConverterCSS.css"/>
+  <h1> All hail the glorious unit converter <br> bringer of accurate coversions </h1>
+  
+  
+<form>
+  <input id="input" type="text" placeholder="Input Value to convert" oninput="convertvalue(), rando()" onchange="convertvalue(), rando()">
+</form>
+
+<p>
+<label> Fr: </label>
+<select class="units" id="unit1" onchange="unitchange(),convertvalue(),rando()">
+  <option value="Inch">Inch</option>
+  <option value="Feet">Feet</option>
+  <option value="Yard">Yard</option>
+  <option value="Mile">Mile</option>
+  <option value="Meter">Meter</option>
+  <option value="Kilometer">Kilometer</option>
+</select> 
+</p>
+  
+<p>
+<label> To: </label>
+<select class="units" id="unit2" onchange="unitchange(),convertvalue(),rando()">
+  <option value="Inch">Inch</option>
+  <option value="Feet">Feet</option>
+  <option value="Yard">Yard</option>
+  <option value="Mile">Mile</option>
+  <option value="Meter">Meter</option>
+  <option value="Kilometer">Kilometer</option>
+</select>
+</p>  
+<p id="output">output number here</p>
+  
+<p id="comment"></p>
+
+</body>
+</html>
