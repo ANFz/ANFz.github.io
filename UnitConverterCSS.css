@@ -11,13 +11,17 @@ h1 {
   text-shadow: 1px 1px;
 }
 
+h2 {
+  color: black;
+}
+
+h3 {
+  color: blue; 
+  text-shadow: 1px 1px black;
+}
+
 body{
-	background-image: url("./ocean.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	background-size: contain;
-	background-color: black;
+  background-image: url("https://photos.google.com/photo/AF1QipOAihU7rH3DOHBxpIoX9wO3rXbRb9gRkHecddn7")
 }
 
 div{
