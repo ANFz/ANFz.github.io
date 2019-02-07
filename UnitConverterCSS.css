@@ -21,6 +21,12 @@ h3 {
 }
 
 body{
+	background-image: url("./ocean.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: contain;
+	background-color: black;
   background-image: url("https://photos.google.com/photo/AF1QipOAihU7rH3DOHBxpIoX9wO3rXbRb9gRkHecddn7")
 }
 
