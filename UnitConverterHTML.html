@@ -1,0 +1,36 @@
+<html>
+<body>
+
+  <h1> All hail the glorious unit converter </h1>  
+  
+<form>
+  <input id="input" type="number" placeholder="Input Value to convert" oninput="convertvalue()" onchange="convertvalue()">
+</form>
+
+<p>
+<label> Fr </label>
+<select class="units" id="unit1" onchange="unitchange(),convertvalue()">
+  <option value="Inch">Inch</option>
+  <option value="Feet">Feet</option>
+  <option value="Yard">Yard</option>
+  <option value="Mile">Mile</option>
+  <option value="Meter">Meter</option>
+  <option value="Kilometer">Kilometer</option>
+</select> 
+</p>
+  
+<p>
+<label> To </label>
+<select class="units" id="unit2" onchange="unitchange(),convertvalue()">
+  <option value="Inch">Inch</option>
+  <option value="Feet">Feet</option>
+  <option value="Yard">Yard</option>
+  <option value="Mile">Mile</option>
+  <option value="Meter">Meter</option>
+  <option value="Kilometer">Kilometer</option>
+</select>
+</p>  
+<p id="output">output number here</p>
+
+</body>
+</html>
