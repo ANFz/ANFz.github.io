@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: Pirate;
-  src: "Piratefont.ttf";
+  src: url("Piratefont.ttf");
 }
 
 
