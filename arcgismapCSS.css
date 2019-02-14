@@ -1,0 +1,47 @@
+@font-face {
+  font-family: Pirate;
+  src: "Piratefont.ttf";
+}
+
+html, body, #map {
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/SYVF7woaitp8sg8a/pirate-flag-jolly-roger-background-6-full-hd-1920x1080_h4brsq80_thumbnail-full01.png);
+      opacity: 0.95;
+    }
+
+#container {
+    position: absolute;
+    z-index: 2;
+    font-size: 10px;
+    line-height: 1.4;
+    background: black;
+    color: white;
+    right: 5px;
+    top: 5px;
+    text-align: center;
+    opacity: 0.80;
+  }
+
+#title {
+    position: absolute;
+    z-index:2;
+    width: 600px;
+    height: 80px;
+    top: 0%;
+    left: 50%;
+    font-size: 20px;
+    color: red;
+    text-shadow: 4px 2px 4px #000000;
+    font-family: garamond;
+    background: black;
+    text-align: center;
+    background-image: url(https://i1.wp.com/originalmotto.us/wp-content/uploads/2015/09/parchment-background.jpg)
+  }
+
+p{
+  color: black;
+  font-family: Pirate;
+  font-size: 12px;
+}
