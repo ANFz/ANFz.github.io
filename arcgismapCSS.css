@@ -1,9 +1,9 @@
-/*
+
 @font-face {
   font-family: Pirate;
   src: "Piratefont.ttf";
 }
-*/
+
 
 html, body, #map {
       height: 100%;
@@ -44,6 +44,6 @@ html, body, #map {
 
 p{
   color: black;
-  /*font-family: Pirate;*/
+  font-family: Pirate;
   font-size: 12px;
 }
