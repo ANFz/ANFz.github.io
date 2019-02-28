@@ -14,7 +14,7 @@ require([
           container: "viewDiv",
           map: map,
           center: [-111.950684, 39.419220],
-          zoom: 6.5
+          zoom: 6.4
         });
 
         var layer0 = new MapImageLayer({
@@ -29,5 +29,5 @@ require([
 
         map.add(layer0);
         map.add(layer1);
-        
+
       });
