@@ -1,4 +1,4 @@
-require(["esri/Map","esri/views/MapView", "esri/layers/MapImageLayer"],function(Map, MapView, MapImageLayer) {
+require(["esri/Map", "esri/views/MapView", "esri/layers/MapImageLayer"],function(Map, MapView, MapImageLayer) {
 
         var map = new Map({
           basemap: "hybrid"
