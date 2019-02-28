@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Pirate;
+  src: url("Piratefont.ttf");
+}
+
+html, body, #map {
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      opacity: 0.95;
+    }
+
+#viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+    }
+
+#footer {
+      text-align: center;
+      color: red;
+      background-color: black;
+      font-family: pirate;
+    }
+
+#container {
+    position: absolute;
+    z-index: 2;
+    font-size: 10px;
+    line-height: 1.4;
+    background: black;
+    color: red;
+    right: 5px;
+    top: 5px;
+    text-align: center;
+    opacity: 0.80;
