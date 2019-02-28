@@ -12,12 +12,12 @@ require(["esri/Map", "esri/views/MapView", "esri/layers/MapImageLayer"],function
         });
 
         var layer0 = new MapImageLayer({
-          url: "http://geoserver2.byu.edu/arcgis/rest/services/3_Toed_Sloth/Snowmelt/MapServer",
+          url: "https://geoserver2.byu.edu/arcgis/rest/services/3_Toed_Sloth/Snowmelt/MapServer",
           sublayers: [{id: 0}]
           });
 
         var layer1 = new MapImageLayer({
-          url: "http://geoserver2.byu.edu/arcgis/rest/services/3_Toed_Sloth/Snowmelt/MapServer",
+          url: "https://geoserver2.byu.edu/arcgis/rest/services/3_Toed_Sloth/Snowmelt/MapServer",
           sublayers: [{id: 1}]
           });
 
